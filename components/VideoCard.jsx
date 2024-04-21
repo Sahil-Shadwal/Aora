@@ -41,11 +41,12 @@ const VideoCard = ({ video: { title, thumbnail, video, creator: { username, avat
               setPlay(false);
             }
           }}
-        />      ):(
+        /> 
+        ):(
         <TouchableOpacity 
           activeOpacity={0.7} 
-          className="w-full h-60 rounded-xl mt-3 relative justify-center items-center"
           onPress={() => setPlay(true)}
+          className="w-full h-60 rounded-xl mt-3 relative justify-center items-center"
         >
             <Image 
               source={{ uri: thumbnail }}
